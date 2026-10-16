@@ -1,0 +1,56 @@
+.topbar {
+  background: var(--navy-deep);
+  color: rgb(255 255 255 / 0.82);
+  font-size: 0.84rem;
+}
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 40px;
+}
+.topbar svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  color: var(--orange);
+}
+.topbar__message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.topbar__contact {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex: none;
+}
+.topbar__contact a,
+.topbar__hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+.topbar__contact a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .topbar__optional {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .topbar__message {
+    display: none;
+  }
+  .topbar__inner {
+    justify-content: center;
+  }
+}

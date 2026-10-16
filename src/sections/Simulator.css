@@ -1,0 +1,378 @@
+.sim {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.sim__stage {
+  background: var(--sky-tint);
+}
+.sim__svg {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  font-family: var(--font-head);
+}
+
+/* scene */
+.sim__sky-top {
+  stop-color: #cfe8f8;
+  transition: stop-color 0.6s;
+}
+.sim__sky-bottom {
+  stop-color: #f4f9fd;
+  transition: stop-color 0.6s;
+}
+.is-night .sim__sky-top {
+  stop-color: #0c1f2b;
+}
+.is-night .sim__sky-bottom {
+  stop-color: #23405a;
+}
+.sim__ground {
+  fill: #dfe7ee;
+}
+.is-night .sim__ground {
+  fill: #1a3042;
+}
+.sim__sun circle {
+  fill: var(--orange);
+}
+.sim__rays {
+  fill: #f8a650;
+  animation: sim-spin 14s linear infinite;
+}
+@keyframes sim-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sim__moon circle {
+  fill: #f6e7b8;
+}
+.sim__moon .sim__moon-cut {
+  fill: #0c1f2b;
+}
+.sim__moon .sim__star {
+  fill: #fff;
+  opacity: 0.8;
+}
+
+.sim__label {
+  fill: var(--navy);
+  font-size: 15px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+.is-night .sim__label {
+  fill: #e2ecf4;
+}
+
+.sim__pv {
+  fill: #2c3f7a;
+  stroke: #e9eff8;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.sim__cell {
+  fill: #3a54a0;
+  stroke: #9fb2dc;
+  stroke-width: 1.2;
+}
+.is-night .sim__cell {
+  fill: #23345f;
+}
+.sim__stand {
+  stroke: #8c99a6;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.sim__inverter rect {
+  fill: #fff;
+  stroke: var(--navy);
+  stroke-width: 3;
+}
+.sim__wave {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.sim__led {
+  fill: #b9c4ce;
+}
+.sim__led.is-on {
+  fill: #22c55e;
+}
+
+.sim__pole {
+  fill: none;
+  stroke: var(--navy);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.sim__wire {
+  fill: none;
+  stroke: #7d8d9b;
+  stroke-width: 2;
+}
+.is-night .sim__pole {
+  stroke: #9fb4c6;
+}
+.sim__grid.is-down .sim__pole,
+.sim__grid.is-down .sim__wire {
+  opacity: 0.35;
+}
+.sim__down {
+  fill: #dc2626;
+}
+.sim__down-x {
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.sim__roof {
+  fill: var(--navy);
+}
+.sim__wall {
+  fill: #fff;
+  stroke: #cfdbe6;
+  stroke-width: 2;
+}
+.sim__window {
+  fill: #9aa7b3;
+  transition:
+    fill 0.4s,
+    filter 0.4s;
+}
+.sim__door {
+  fill: var(--blue);
+}
+.sim__home.is-on .sim__window {
+  fill: #ffd66b;
+  filter: drop-shadow(0 0 6px #ffcf4d);
+}
+
+.sim__batt-body {
+  fill: #fff;
+  stroke: var(--navy);
+  stroke-width: 3;
+}
+.sim__batt-tip {
+  fill: var(--navy);
+}
+.sim__batt-fill {
+  fill: #22c55e;
+  transition: width 0.4s var(--ease);
+}
+.sim__batt-text {
+  fill: var(--navy);
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+/* energy flows */
+.flow path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.flow__track {
+  stroke: #c9d6e2;
+  stroke-width: 7;
+}
+.is-night .flow__track {
+  stroke: #3a5670;
+}
+.flow__dots {
+  stroke-width: 7;
+  stroke-dasharray: 1 15;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.flow.is-active .flow__dots {
+  opacity: 1;
+  animation: flow 0.9s linear infinite;
+}
+.flow.is-reverse.is-active .flow__dots {
+  animation-direction: reverse;
+}
+.flow--solar .flow__dots {
+  stroke: var(--orange);
+}
+.flow--grid .flow__dots {
+  stroke: var(--blue);
+}
+.is-night .flow--grid .flow__dots {
+  stroke: var(--sky);
+}
+.flow--battery .flow__dots {
+  stroke: #16a34a;
+}
+.flow.is-active .flow__track {
+  stroke: #e6eef5;
+}
+.is-night .flow.is-active .flow__track {
+  stroke: #2d4a63;
+}
+@keyframes flow {
+  from {
+    stroke-dashoffset: 16;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* controls */
+.sim__controls {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  padding: clamp(22px, 3vw, 34px);
+}
+.sim__mode-text {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.sim__scenarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.sim__scenarios button {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 12px 6px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.sim__scenarios svg {
+  width: 20px;
+  height: 20px;
+}
+.sim__scenarios button[aria-checked='true'] {
+  border-color: var(--orange);
+  background: #fff6ec;
+}
+.sim__switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  color: var(--navy);
+  font-weight: 600;
+  cursor: pointer;
+}
+.sim__switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.sim__switch-ui {
+  position: relative;
+  flex: none;
+  width: 46px;
+  height: 26px;
+  border-radius: 99px;
+  background: #cbd5df;
+  transition: background 0.2s;
+}
+.sim__switch-ui::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+  transition: transform 0.2s var(--ease);
+}
+.sim__switch input:checked + .sim__switch-ui {
+  background: var(--green);
+}
+.sim__switch input:checked + .sim__switch-ui::after {
+  transform: translateX(20px);
+}
+.sim__switch input:focus-visible + .sim__switch-ui {
+  outline: 3px solid var(--sky);
+  outline-offset: 2px;
+}
+.sim__status {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--orange);
+  border-radius: 12px;
+  background: #fff6ec;
+  color: var(--navy);
+  font-size: 0.93rem;
+  font-weight: 500;
+}
+.sim__status svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  color: var(--orange-text);
+}
+.sim__status--battery {
+  border-color: #16a34a;
+  background: var(--green-tint);
+}
+.sim__status--battery svg {
+  color: var(--green);
+}
+.sim__status--grid {
+  border-color: var(--blue);
+  background: var(--sky-tint);
+}
+.sim__status--grid svg {
+  color: var(--blue);
+}
+.sim__status--warn {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+.sim__status--warn svg {
+  color: #b91c1c;
+}
+.sim__status--idle {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+.sim__status--idle svg {
+  color: var(--muted);
+}
+
+@media (max-width: 959px) {
+  .sim {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 599px) {
+  .sim__label {
+    font-size: 22px;
+  }
+  .sim__batt-text {
+    font-size: 18px;
+  }
+}

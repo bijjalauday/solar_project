@@ -1,0 +1,1045 @@
+{
+  "_readme": "Single source of truth for the website. Edit any value here and the UI updates (instantly while `npm run dev` is running; run `npm run build` again for production). Image paths are relative to the /public folder, e.g. /assets/brand/logo.jpeg = public/assets/brand/logo.jpeg. Everything marked SAMPLE is placeholder content - replace it with real details before going live.",
+  "brand": {
+    "name": "Raywave Solars",
+    "legalName": "Raywave Solars Pvt. Ltd.",
+    "tagline": "Power Your World with Solar",
+    "logo": "/assets/brand/logo.jpeg",
+    "logoMark": "/assets/brand/logo-mark.svg",
+    "favicon": "/assets/brand/logo-mark.svg",
+    "headerLogo": {
+      "_comment": "Header shows `image` (small square mark) next to the brand name. Set showName to false if your image already contains the name.",
+      "image": "/assets/brand/logo-mark.svg",
+      "showName": true
+    }
+  },
+  "seo": {
+    "title": "Raywave Solars | Rooftop Solar Installation in Hyderabad",
+    "description": "Rooftop solar for homes, housing societies and businesses in Hyderabad. Get up to ₹78,000 PM Surya Ghar subsidy, easy EMI and a free site survey. Calculate your savings in seconds.",
+    "keywords": "solar panel installation Hyderabad, rooftop solar, PM Surya Ghar subsidy, solar EMI, solar company Telangana",
+    "siteUrl": "https://www.example.com",
+    "ogImage": "/assets/brand/logo.jpeg"
+  },
+  "theme": {
+    "_comment": "Brand colours sampled from logo_1.jpeg. Changing a value here recolours the whole site.",
+    "navy": "#173447",
+    "navyDeep": "#0F2533",
+    "orange": "#F0801B",
+    "orangeHover": "#F59A45",
+    "orangeText": "#B4570B",
+    "blue": "#34467C",
+    "sky": "#7FBFEA",
+    "skyTint": "#EEF6FC",
+    "green": "#15803D",
+    "greenTint": "#E8F6EC"
+  },
+  "contact": {
+    "_comment": "SAMPLE contact details - replace with real ones. The placeholder number is deliberately invalid (all zeros) so test clicks never reach a real person.",
+    "phone": "+91 00000 00000",
+    "whatsapp": "+91 00000 00000",
+    "whatsappMessage": "Hi Raywave Solars, I would like to know more about rooftop solar.",
+    "email": "hello@raywavesolars.example",
+    "address": {
+      "line1": "Plot 00, Sample Street",
+      "line2": "Madhapur",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500081"
+    },
+    "hours": "Mon – Sat, 9:00 AM – 7:00 PM",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Madhapur,+Hyderabad,+Telangana&output=embed",
+    "mapLink": "https://maps.google.com/?q=Madhapur,+Hyderabad",
+    "serviceArea": "Hyderabad, Secunderabad & across Telangana"
+  },
+  "socials": [
+    {
+      "platform": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "platform": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/"
+    },
+    {
+      "platform": "x",
+      "label": "X",
+      "url": "https://x.com/"
+    }
+  ],
+  "topBar": {
+    "enabled": true,
+    "message": "PM Surya Ghar registered vendor · MNRE-approved panels"
+  },
+  "sections": {
+    "_comment": "Page order = order of this list. Set enabled:false to hide a section, inNav:false to keep it off the menu.",
+    "order": [
+      {
+        "id": "home",
+        "label": "Home",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "trust",
+        "label": "Why trust us",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "solutions",
+        "label": "Solutions",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "calculator",
+        "label": "Calculator",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "how-solar-works",
+        "label": "How Solar Works",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "process",
+        "label": "Process",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "financing",
+        "label": "EMI",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "why-us",
+        "label": "Why Us",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "projects",
+        "label": "Projects",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "partners",
+        "label": "Brands",
+        "enabled": true,
+        "inNav": false
+      },
+      {
+        "id": "reviews",
+        "label": "Reviews",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "enabled": true,
+        "inNav": true
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "enabled": true,
+        "inNav": true
+      }
+    ]
+  },
+  "header": {
+    "cta": {
+      "label": "Get Free Quote",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "eyebrow": "Hyderabad's rooftop solar experts",
+    "titleLead": "Cut your electricity bill by up to",
+    "titleHighlight": "90%",
+    "titleTail": "with rooftop solar",
+    "subtitle": "Custom-designed solar for homes, housing societies and businesses. We handle the design, installation, net-metering and your PM Surya Ghar subsidy paperwork, end to end.",
+    "primaryCta": {
+      "label": "Book a Free Site Survey",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "Calculate My Savings",
+      "href": "#calculator"
+    },
+    "highlights": ["Free site survey", "Installed in 3–5 days", "0% hassle subsidy"],
+    "image": "/assets/images/hero/rooftop.svg",
+    "imageAlt": "Illustration of a house with rooftop solar panels",
+    "savingsCard": {
+      "label": "Monthly bill",
+      "before": "₹6,200",
+      "after": "₹450",
+      "note": "SAMPLE 5 kW home in Kondapur"
+    },
+    "offers": [
+      {
+        "icon": "landmark",
+        "title": "Up to ₹78,000",
+        "text": "PM Surya Ghar government subsidy"
+      },
+      {
+        "icon": "wallet",
+        "title": "EMI from ₹2,999/mo",
+        "text": "Easy finance with leading banks"
+      },
+      {
+        "icon": "shield-check",
+        "title": "25-year warranty",
+        "text": "On solar panel performance"
+      }
+    ]
+  },
+  "trust": {
+    "_comment": "SAMPLE numbers - replace with your real figures.",
+    "stats": [
+      {
+        "value": 750,
+        "suffix": "+",
+        "label": "Rooftops powered"
+      },
+      {
+        "value": 4.5,
+        "suffix": " MW",
+        "decimals": 1,
+        "label": "Solar capacity installed"
+      },
+      {
+        "value": 8,
+        "suffix": "+",
+        "label": "Years of experience"
+      },
+      {
+        "value": 4.9,
+        "suffix": "★",
+        "decimals": 1,
+        "label": "Average customer rating"
+      }
+    ],
+    "badges": ["MNRE-approved panels", "PM Surya Ghar registered", "BIS-certified components", "Net-metering experts"]
+  },
+  "solutions": {
+    "eyebrow": "What we install",
+    "title": "Solar solutions for every roof",
+    "subtitle": "From a 2 kW home system to a 1 MW factory rooftop, every design is engineered for your roof, your load and your budget.",
+    "items": [
+      {
+        "id": "home",
+        "title": "Homes & Villas",
+        "capacity": "1 – 10 kW",
+        "image": "/assets/images/solutions/home.svg",
+        "summary": "Elevated, rust-free rooftop systems that pay for themselves in 3–4 years.",
+        "points": [
+          "Up to ₹78,000 PM Surya Ghar subsidy",
+          "On-grid or hybrid with battery backup",
+          "Net-metering with TGSPDCL handled for you"
+        ],
+        "interest": "Home / Villa"
+      },
+      {
+        "id": "society",
+        "title": "Housing Societies",
+        "capacity": "10 – 500 kW",
+        "image": "/assets/images/solutions/society.svg",
+        "summary": "Power lifts, pumps and common-area lighting. Cut maintenance charges for every flat.",
+        "points": [
+          "₹18,000/kW subsidy for RWAs",
+          "RWA approvals & documentation support",
+          "Monthly generation reports for residents"
+        ],
+        "interest": "Housing society"
+      },
+      {
+        "id": "business",
+        "title": "Commercial & Industrial",
+        "capacity": "20 kW – 1 MW+",
+        "image": "/assets/images/solutions/commercial.svg",
+        "summary": "Lower your operating costs with fast-payback rooftop and shed-mounted plants.",
+        "points": ["Payback typically in 3–4 years", "Accelerated depreciation tax benefit", "Remote monitoring & AMC packages"],
+        "interest": "Business / Industry"
+      },
+      {
+        "id": "agriculture",
+        "title": "Farms & Agriculture",
+        "capacity": "3 – 100 kW",
+        "image": "/assets/images/solutions/agriculture.svg",
+        "summary": "Ground-mounted plants and solar pumps for farmhouses, poultry and cold storage.",
+        "points": ["Ground-mounted & agri-voltaic designs", "Solar water pumps", "Off-grid systems where the grid is weak"],
+        "interest": "Farm / Agriculture"
+      }
+    ]
+  },
+  "calculator": {
+    "eyebrow": "Savings calculator",
+    "title": "See your solar savings in 10 seconds",
+    "subtitle": "Move the slider to your average monthly electricity bill. We'll size the system, apply the subsidy and show your payback.",
+    "_comment": "All maths lives in src/lib/solar.js and reads these numbers. fixedChargePerMonth = DISCOM fixed/minimum charges that remain after solar. Values are indicative; tune them to your real pricing.",
+    "unitsPerKwPerMonth": 120,
+    "panelWattage": 550,
+    "roofAreaSqftPerKw": 80,
+    "panelDegradationPerYear": 0.005,
+    "tariffEscalationPerYear": 0.03,
+    "lifetimeYears": 25,
+    "co2KgPerUnit": 0.82,
+    "co2KgPerTreePerYear": 21,
+    "segments": [
+      {
+        "id": "home",
+        "label": "Home",
+        "icon": "house",
+        "tariffPerUnit": 8,
+        "fixedChargePerMonth": 100,
+        "bill": {
+          "min": 1000,
+          "max": 20000,
+          "step": 250,
+          "default": 4000
+        },
+        "minKw": 1,
+        "maxKw": 10,
+        "kwStep": 0.5,
+        "costPerKw": [
+          {
+            "uptoKw": 3,
+            "rate": 65000
+          },
+          {
+            "uptoKw": 6,
+            "rate": 60000
+          },
+          {
+            "uptoKw": 10,
+            "rate": 56000
+          }
+        ],
+        "subsidy": {
+          "label": "PM Surya Ghar subsidy",
+          "slabs": [
+            {
+              "uptoKw": 2,
+              "perKw": 30000
+            },
+            {
+              "uptoKw": 3,
+              "perKw": 18000
+            }
+          ],
+          "max": 78000
+        }
+      },
+      {
+        "id": "society",
+        "label": "Housing society",
+        "icon": "building-2",
+        "tariffPerUnit": 8,
+        "fixedChargePerMonth": 1500,
+        "bill": {
+          "min": 10000,
+          "max": 300000,
+          "step": 5000,
+          "default": 60000
+        },
+        "minKw": 5,
+        "maxKw": 500,
+        "kwStep": 1,
+        "costPerKw": [
+          {
+            "uptoKw": 50,
+            "rate": 52000
+          },
+          {
+            "uptoKw": 500,
+            "rate": 48000
+          }
+        ],
+        "subsidy": {
+          "label": "RWA / GHS subsidy",
+          "slabs": [
+            {
+              "uptoKw": 500,
+              "perKw": 18000
+            }
+          ],
+          "max": null
+        }
+      },
+      {
+        "id": "business",
+        "label": "Business",
+        "icon": "factory",
+        "tariffPerUnit": 10,
+        "fixedChargePerMonth": 8000,
+        "bill": {
+          "min": 10000,
+          "max": 1000000,
+          "step": 10000,
+          "default": 100000
+        },
+        "minKw": 5,
+        "maxKw": 1000,
+        "kwStep": 1,
+        "costPerKw": [
+          {
+            "uptoKw": 50,
+            "rate": 48000
+          },
+          {
+            "uptoKw": 200,
+            "rate": 44000
+          },
+          {
+            "uptoKw": 1000,
+            "rate": 40000
+          }
+        ],
+        "subsidy": null,
+        "note": "No capital subsidy for commercial plants, but you can claim accelerated depreciation (ask your CA)."
+      }
+    ],
+    "disclaimer": "Estimates use average Hyderabad sunlight (~4 units per kW per day) and indicative prices. Your exact quote follows a free site survey."
+  },
+  "simulator": {
+    "eyebrow": "How solar works",
+    "title": "Watch the energy flow, live",
+    "subtitle": "Pick a system type, then switch between day, night and a power cut to see where your electricity comes from.",
+    "modes": [
+      {
+        "id": "ongrid",
+        "label": "On-grid",
+        "text": "Lowest cost. Extra power is exported to the grid and credited via net-metering. No backup during power cuts."
+      },
+      {
+        "id": "hybrid",
+        "label": "Hybrid",
+        "text": "Solar + battery + grid. Keeps your home running during power cuts and stores daytime energy for the evening."
+      },
+      {
+        "id": "offgrid",
+        "label": "Off-grid",
+        "text": "Battery-based and fully independent of the grid. Ideal for farms and sites without reliable power."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "From survey to savings in 5 simple steps",
+    "subtitle": "Most home systems are generating power within 3–5 days of the order. We handle the paperwork while you relax.",
+    "steps": [
+      {
+        "icon": "clipboard-check",
+        "title": "Free site survey",
+        "text": "Our engineer checks your roof, shading and electricity bill. No cost, no obligation."
+      },
+      {
+        "icon": "ruler",
+        "title": "Design & proposal",
+        "text": "A custom layout, generation forecast and transparent quote with subsidy and EMI options."
+      },
+      {
+        "icon": "hard-hat",
+        "title": "Installation",
+        "text": "Certified team installs panels, inverter, earthing and lightning protection in 1–3 days."
+      },
+      {
+        "icon": "file-check",
+        "title": "Net-metering & subsidy",
+        "text": "We apply for your net meter with the DISCOM and file your PM Surya Ghar subsidy."
+      },
+      {
+        "icon": "chart-line",
+        "title": "Start saving",
+        "text": "Track generation on your phone and watch your bill drop from the very first month."
+      }
+    ]
+  },
+  "financing": {
+    "eyebrow": "Easy EMI",
+    "title": "Go solar with little upfront cost",
+    "subtitle": "Your monthly savings can cover most of the EMI. After the loan closes, the power is free for 20+ years.",
+    "steps": [
+      {
+        "title": "Small down payment",
+        "text": "Start with as little as 10–20% of the system cost."
+      },
+      {
+        "title": "Subsidy credited",
+        "text": "PM Surya Ghar subsidy goes straight to your bank account."
+      },
+      {
+        "title": "EMI ≈ your old bill",
+        "text": "Pay a monthly EMI that is close to what you used to pay the DISCOM."
+      },
+      {
+        "title": "Free power after",
+        "text": "Loan closes in 3–7 years; enjoy free electricity for the rest of the system life."
+      }
+    ],
+    "emi": {
+      "defaultRatePct": 9,
+      "minRatePct": 6,
+      "maxRatePct": 18,
+      "tenuresMonths": [12, 24, 36, 48, 60, 72, 84],
+      "defaultTenureMonths": 60,
+      "defaultDownPaymentPct": 20,
+      "processingFeePct": 1,
+      "note": "SAMPLE indicative interest rates. Actual rates depend on the lender and your credit profile."
+    },
+    "lenders": ["State Bank of India", "Bank of Baroda", "Canara Bank", "Union Bank of India"]
+  },
+  "whyUs": {
+    "eyebrow": "Why Raywave",
+    "title": "Engineered to perform for 25+ years",
+    "subtitle": "We don't just install panels. We design, build and look after power plants.",
+    "features": [
+      {
+        "icon": "ruler",
+        "title": "Custom roof engineering",
+        "text": "Shadow analysis, wind-load checked structures and a layout made for your roof."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Tier-1 components only",
+        "text": "MNRE-approved panels and leading inverter brands, with BIS-certified wiring."
+      },
+      {
+        "icon": "wrench",
+        "title": "Free maintenance",
+        "text": "Periodic cleaning visits and health checks included for the first 5 years."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Live monitoring app",
+        "text": "See generation and savings in real time, and get alerts if something needs attention."
+      },
+      {
+        "icon": "badge-indian-rupee",
+        "title": "Transparent pricing",
+        "text": "One clear quote. No hidden charges for structure, cabling or net-metering."
+      },
+      {
+        "icon": "headset",
+        "title": "Local, fast support",
+        "text": "A Hyderabad-based service team that responds within 24 hours."
+      }
+    ],
+    "warranties": [
+      {
+        "years": 25,
+        "label": "Panel performance"
+      },
+      {
+        "years": 10,
+        "label": "Inverter warranty"
+      },
+      {
+        "years": 10,
+        "label": "Structure warranty"
+      },
+      {
+        "years": 5,
+        "label": "Free maintenance"
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Our work",
+    "title": "Recent installations",
+    "subtitle": "A few of the rooftops we've powered across Telangana.",
+    "_comment": "SAMPLE projects - replace with your real projects and photos. `category` must match one of `filters`.",
+    "filters": ["All", "Residential", "Society", "Commercial", "Agriculture"],
+    "items": [
+      {
+        "title": "5 kW Home Rooftop",
+        "category": "Residential",
+        "location": "Kondapur, Hyderabad",
+        "capacityKw": 5,
+        "image": "/assets/images/projects/project-1.svg",
+        "result": "Bill ₹6,200 → ₹450 / month"
+      },
+      {
+        "title": "60 kW Apartment Complex",
+        "category": "Society",
+        "location": "Kukatpally, Hyderabad",
+        "capacityKw": 60,
+        "image": "/assets/images/projects/project-2.svg",
+        "result": "Common-area bill cut by 85%"
+      },
+      {
+        "title": "150 kW Factory Shed",
+        "category": "Commercial",
+        "location": "Patancheru, Sangareddy",
+        "capacityKw": 150,
+        "image": "/assets/images/projects/project-3.svg",
+        "result": "Saves ₹1.9 lakh / month"
+      },
+      {
+        "title": "8 kW Villa",
+        "category": "Residential",
+        "location": "Gachibowli, Hyderabad",
+        "capacityKw": 8,
+        "image": "/assets/images/projects/project-4.svg",
+        "result": "Hybrid with 10 kWh battery"
+      },
+      {
+        "title": "80 kW School Campus",
+        "category": "Commercial",
+        "location": "Miyapur, Hyderabad",
+        "capacityKw": 80,
+        "image": "/assets/images/projects/project-5.svg",
+        "result": "Payback in 3.4 years"
+      },
+      {
+        "title": "25 kW Farm Plant",
+        "category": "Agriculture",
+        "location": "Moinabad, Ranga Reddy",
+        "capacityKw": 25,
+        "image": "/assets/images/projects/project-6.svg",
+        "result": "Powers pumps & cold room"
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Trusted brands",
+    "title": "We install only proven, bankable brands",
+    "_comment": "Add a `logo` path (e.g. /assets/images/brands/waaree.png) to show an image instead of the name.",
+    "groups": [
+      {
+        "title": "Solar panels",
+        "items": [
+          {
+            "name": "Waaree"
+          },
+          {
+            "name": "Adani Solar"
+          },
+          {
+            "name": "Tata Power Solar"
+          },
+          {
+            "name": "Premier Energies"
+          },
+          {
+            "name": "Vikram Solar"
+          },
+          {
+            "name": "RenewSys"
+          }
+        ]
+      },
+      {
+        "title": "Inverters",
+        "items": [
+          {
+            "name": "Growatt"
+          },
+          {
+            "name": "Sungrow"
+          },
+          {
+            "name": "Deye"
+          },
+          {
+            "name": "Havells"
+          },
+          {
+            "name": "Solis"
+          },
+          {
+            "name": "Polycab"
+          }
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Customer reviews",
+    "title": "Families and businesses love going solar with us",
+    "_comment": "SAMPLE reviews - replace with real customer reviews. `photo` is optional (initials are shown when empty).",
+    "summary": {
+      "rating": 4.9,
+      "count": 186,
+      "source": "Google reviews",
+      "url": "https://www.google.com/maps"
+    },
+    "items": [
+      {
+        "name": "Sample Customer A",
+        "location": "Kondapur",
+        "system": "5 kW home",
+        "rating": 5,
+        "photo": "",
+        "quote": "Our bill dropped from over ₹6,000 to under ₹500. The team handled the subsidy and net meter completely, and we didn't visit a single office."
+      },
+      {
+        "name": "Sample Customer B",
+        "location": "Kukatpally",
+        "system": "60 kW society",
+        "rating": 5,
+        "photo": "",
+        "quote": "Clear proposal, on-time installation and monthly generation reports for the committee. Maintenance charges for residents went down noticeably."
+      },
+      {
+        "name": "Sample Customer C",
+        "location": "Patancheru",
+        "system": "150 kW factory",
+        "rating": 5,
+        "photo": "",
+        "quote": "Professional engineering team. The structure design for our metal shed was excellent and the plant has performed above the forecast."
+      },
+      {
+        "name": "Sample Customer D",
+        "location": "Gachibowli",
+        "system": "8 kW hybrid",
+        "rating": 5,
+        "photo": "",
+        "quote": "We went hybrid with a battery, so power cuts no longer affect us. The app shows exactly how much we generate every day."
+      }
+    ]
+  },
+  "videos": {
+    "_comment": "Add YouTube video IDs (the part after v= in the URL) to show a video row under reviews. Empty list = hidden.",
+    "items": []
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered",
+    "subtitle": "Can't find what you're looking for? Call or WhatsApp us and an engineer will help.",
+    "items": [
+      {
+        "q": "How much subsidy can I get under PM Surya Ghar?",
+        "a": "Residential homes get ₹30,000 per kW for the first 2 kW and ₹18,000 for the 3rd kW, up to a maximum of ₹78,000 for systems of 3 kW and above. Housing societies (RWA/GHS) get ₹18,000 per kW for common facilities. The subsidy is credited directly to your bank account after commissioning."
+      },
+      {
+        "q": "What size of system do I need?",
+        "a": "A simple rule: every 1 kW generates about 120 units a month in Hyderabad. If your home uses 300–400 units a month, a 3 kW system usually covers it. Use our calculator above or book a free survey for an exact size."
+      },
+      {
+        "q": "How much does a rooftop solar system cost?",
+        "a": "A typical 3 kW home system costs around ₹1.8–2.0 lakh before subsidy, and roughly ₹1.1–1.2 lakh after the ₹78,000 subsidy. Prices depend on panel brand, structure height and roof type."
+      },
+      {
+        "q": "How long does installation take?",
+        "a": "Installation itself takes 1–3 days for most homes. Net-metering approval by the DISCOM usually takes 2–4 weeks; we follow up on it for you."
+      },
+      {
+        "q": "Will solar work at night or during a power cut?",
+        "a": "Panels generate only in daylight. With an on-grid system, the extra power you export in the day offsets what you use at night through net-metering. On-grid systems switch off during a power cut for safety. If you want backup, choose a hybrid system with batteries."
+      },
+      {
+        "q": "How much space is needed on the roof?",
+        "a": "About 70–90 sq. ft. of shadow-free area per kW. A 3 kW system needs roughly 250 sq. ft. Elevated structures let you keep using the terrace underneath."
+      },
+      {
+        "q": "What maintenance is required?",
+        "a": "Very little. Panels should be rinsed with water every 2–3 weeks to remove dust. We include periodic cleaning and health checks for the first 5 years."
+      },
+      {
+        "q": "Can I pay in EMI?",
+        "a": "Yes. We work with leading banks for solar loans with tenures up to 7 years. In many cases your monthly savings cover most of the EMI."
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "Get in touch",
+    "title": "Book your free site survey",
+    "subtitle": "Share a few details and our solar engineer will call you within 24 hours.",
+    "interestOptions": ["Home / Villa", "Housing society", "Business / Industry", "Farm / Agriculture"]
+  },
+  "leadForm": {
+    "_comment": "mode: \"whatsapp\" opens WhatsApp with the enquiry pre-filled (no server needed). mode: \"endpoint\" POSTs JSON to `endpoint` (e.g. a Formspree or your own API URL).",
+    "mode": "whatsapp",
+    "endpoint": "",
+    "successTitle": "Thank you! We've received your request.",
+    "successText": "Our solar engineer will contact you within 24 hours to schedule your free site survey.",
+    "consentText": "By submitting, you agree that {{brand.name}} may contact you about your enquiry. See our [Privacy Policy](#privacy-policy)."
+  },
+  "footer": {
+    "about": "Raywave Solars designs and installs rooftop solar power plants for homes, housing societies and businesses across Telangana.",
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "href": "#privacy-policy"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "#terms"
+      }
+    ]
+  },
+  "legal": {
+    "_comment": "Privacy Policy and Terms open in a pop-up when a link points to '#<document id>' (e.g. #privacy-policy). {{tokens}} are filled in from brand/contact/grievanceOfficer so details stay in one place. Use **double asterisks** for bold. SAMPLE draft text - have it reviewed by a lawyer/CA before going live.",
+    "grievanceOfficer": {
+      "_comment": "SAMPLE - the person customers can contact about their data (required under the DPDP Act 2023 / IT Rules).",
+      "name": "SAMPLE Name",
+      "designation": "Grievance Officer",
+      "email": "privacy@raywavesolars.example",
+      "phone": "{{contact.phone}}"
+    },
+    "documents": [
+      {
+        "id": "privacy-policy",
+        "title": "Privacy Policy",
+        "lastUpdated": "16 October 2026",
+        "intro": "{{brand.legalName}} (\"{{brand.name}}\", \"we\", \"us\") respects your privacy. This policy explains what personal data we collect when you use this website or our solar services, why we collect it, who we share it with and the choices you have. It is written to comply with the Digital Personal Data Protection Act, 2023 and other applicable Indian laws.",
+        "highlights": [
+          "We collect only what we need to prepare your solar quote and look after your system.",
+          "We never sell or rent your personal data.",
+          "We contact you only about your enquiry or your system, and you can opt out of offers at any time.",
+          "You can ask us to see, correct or delete your data, or withdraw your consent.",
+          "The savings and EMI calculators run in your browser. Nothing you enter there is stored unless you send us an enquiry."
+        ],
+        "contactTitle": "Contact & grievances",
+        "contactText": "For questions about this policy, or to exercise any of your rights, contact our Grievance Officer:",
+        "contactPerson": "grievanceOfficer",
+        "sections": [
+          {
+            "id": "who-we-are",
+            "title": "Who we are",
+            "content": [
+              "{{brand.legalName}} designs and installs rooftop solar power systems. For the personal data described here, we are the \"Data Fiduciary\" under the DPDP Act, 2023. Our office is at {{contact.address}}."
+            ]
+          },
+          {
+            "id": "what-we-collect",
+            "title": "Information we collect",
+            "content": [
+              "**Information you give us**, for example when you fill in the enquiry form, message us on WhatsApp, call us or meet our team:",
+              {
+                "list": [
+                  "Your name, mobile number, email address and area / city.",
+                  "Details about your requirement: property type, average monthly electricity bill and any message you send.",
+                  "For a site survey and installation: your site address, roof measurements and photos, a copy of your electricity bill and your electricity consumer / service number.",
+                  "If you ask us to apply for net-metering, the government subsidy or a solar loan on your behalf: the details those applications require, such as identity proof and the bank account where the subsidy is to be credited. We collect these only when you ask us to apply, and only what the application needs."
+                ]
+              },
+              "**Information collected automatically** when you visit the website: basic technical data such as browser type, device, pages visited and approximate location derived from your IP address, through our hosting provider and (if enabled) website analytics.",
+              "**What we don't collect:** we do not take payment card or net-banking details on this website, and we do not ask for sensitive information we don't need."
+            ]
+          },
+          {
+            "id": "how-we-use",
+            "title": "How we use your information",
+            "content": [
+              "We use your personal data only for these purposes:",
+              {
+                "list": [
+                  "Responding to your enquiry, scheduling a free site survey and preparing your proposal.",
+                  "Designing, installing, testing and commissioning your solar system.",
+                  "Applying for net-metering with your DISCOM and for government subsidies, when you ask us to.",
+                  "Helping you apply for a solar loan with a lender you choose.",
+                  "After-sales service: maintenance visits, monitoring support, warranty claims and service reminders.",
+                  "Sending you offers or updates about our services, only if you have agreed, and you can opt out at any time.",
+                  "Meeting legal, tax and accounting obligations, and protecting against fraud or misuse.",
+                  "Understanding how visitors use the website so we can improve it (using aggregated data where possible)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "consent",
+            "title": "Your consent",
+            "content": [
+              "When you submit an enquiry or share details with us, you consent to us using them for the purposes above. You may withdraw consent at any time by contacting us (see \"Contact & grievances\"). Withdrawal does not affect anything we did before it. We may still keep data we are legally required to keep, and we may be unable to continue a service that depends on that data."
+            ]
+          },
+          {
+            "id": "whatsapp-calls",
+            "title": "WhatsApp, calls and messages",
+            "content": [
+              "If you choose to send your enquiry through WhatsApp, the message travels through WhatsApp (Meta), and WhatsApp's own privacy policy applies to that service. We will call, WhatsApp or SMS you only on the number you gave us, about your enquiry or your system. Promotional messages are sent only with your consent. Reply \"STOP\" or tell our team, and we will stop."
+            ]
+          },
+          {
+            "id": "sharing",
+            "title": "Who we share it with",
+            "content": [
+              "We **never sell or rent** your personal data. We share it only when needed to deliver your service or when the law requires it:",
+              {
+                "list": [
+                  "**Your electricity DISCOM** (e.g. TGSPDCL / TGNPDCL) to apply for net-metering and grid connection.",
+                  "**Government portals** such as the PM Surya Ghar national portal / MNRE, to claim your subsidy.",
+                  "**Banks and NBFCs**, only if you ask us to help with a solar loan.",
+                  "**Equipment manufacturers**, to register product warranties in your name.",
+                  "**Installation partners and technicians** working for us, under confidentiality obligations.",
+                  "**Service providers** who help us run our business (website hosting, email, cloud storage, analytics), who may use your data only on our instructions.",
+                  "**Authorities**, when required by law, court order or to protect rights and safety."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cookies",
+            "title": "Cookies and third-party content",
+            "content": [
+              "The website may use essential cookies and, if enabled, analytics cookies to understand traffic. You can block or delete cookies in your browser settings. Embedded content such as Google Maps and YouTube videos is served by those companies and may set their own cookies under their privacy policies. Some of these providers may process data outside India."
+            ]
+          },
+          {
+            "id": "security",
+            "title": "How we protect your data",
+            "content": [
+              "We use reasonable security safeguards: access is limited to staff and partners who need it, data is kept on secured systems and devices, and providers are chosen with appropriate safeguards. No method of storage or transmission is completely secure, but if a personal data breach occurs we will inform affected users and the Data Protection Board of India as required by law."
+            ]
+          },
+          {
+            "id": "retention",
+            "title": "How long we keep it",
+            "content": [
+              {
+                "list": [
+                  "**Enquiries that don't become orders:** up to 24 months after our last conversation, then deleted.",
+                  "**Customers:** for as long as your system is under warranty or service with us, and afterwards only as long as tax and accounting laws require (generally up to 8 years).",
+                  "**Website technical data:** kept in aggregated or anonymised form wherever possible."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "your-rights",
+            "title": "Your rights",
+            "content": [
+              "Under the DPDP Act, 2023 you have the right to:",
+              {
+                "list": [
+                  "Get a summary of the personal data we hold about you and how we use it.",
+                  "Ask us to correct, complete or update inaccurate or incomplete data.",
+                  "Ask us to erase data we no longer need, unless the law requires us to keep it.",
+                  "Withdraw your consent and opt out of promotional messages.",
+                  "Have your grievances addressed by us.",
+                  "Nominate another person to exercise these rights on your behalf in case of death or incapacity."
+                ]
+              },
+              "To use any of these rights, contact our Grievance Officer (below). We may need to verify your identity first. We aim to respond within 7 working days, and in any case within the time required by law. If you are not satisfied with our response, you may approach the Data Protection Board of India."
+            ]
+          },
+          {
+            "id": "children",
+            "title": "Children",
+            "content": [
+              "Our services are meant for adults. We do not knowingly collect personal data from anyone under 18. If you believe a child has shared data with us, please contact us and we will delete it."
+            ]
+          },
+          {
+            "id": "changes",
+            "title": "Changes to this policy",
+            "content": [
+              "We may update this policy when our services or the law change. The \"Last updated\" date at the top shows the latest version. For significant changes, we will make reasonable efforts to inform you."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "terms",
+        "title": "Terms of Service",
+        "lastUpdated": "16 October 2026",
+        "intro": "These terms apply to your use of this website, operated by {{brand.legalName}} (\"{{brand.name}}\", \"we\", \"us\"). By using the website, you agree to them. Solar systems you buy from us are governed by the written proposal and contract you sign with us.",
+        "highlights": [
+          "Calculator and EMI results are estimates, not quotes. Your final price follows a free site survey.",
+          "Government subsidy and net-metering are approved by the government and your DISCOM. We help you apply but cannot guarantee their amounts or timelines.",
+          "Loans are offered by banks / NBFCs on their own terms."
+        ],
+        "contactTitle": "Contact us",
+        "contactText": "Questions about these terms? Reach us at:",
+        "contactPerson": null,
+        "sections": [
+          {
+            "id": "use",
+            "title": "Using this website",
+            "content": [
+              "You may use this website to learn about our services, estimate your savings and contact us. Please do not misuse it: do not attempt to disrupt it, gain unauthorised access, submit false information or use it for any unlawful purpose."
+            ]
+          },
+          {
+            "id": "estimates",
+            "title": "Estimates are not quotes",
+            "content": [
+              "The savings calculator, EMI calculator, energy-flow simulator and figures on this website are illustrative. They are based on average sunlight, typical tariffs and indicative prices. Actual system size, price, generation and savings depend on your roof, shading, consumption, tariff, equipment and government rules, and will be confirmed in a written proposal after a site survey."
+            ]
+          },
+          {
+            "id": "orders",
+            "title": "Quotes, orders and installation",
+            "content": [
+              "A quote is valid for the period stated on it. An order is confirmed only when you accept our written proposal and pay the agreed advance. Installation timelines, payment milestones, warranties and service commitments are set out in that proposal/contract, which prevails over anything on this website."
+            ]
+          },
+          {
+            "id": "subsidy",
+            "title": "Government subsidy and net-metering",
+            "content": [
+              "Subsidies (such as under PM Surya Ghar: Muft Bijli Yojana) and net-metering are governed by government and DISCOM rules, which may change. Eligibility, amounts and timelines are decided by the relevant authorities. We will prepare and file applications on your behalf when you ask us to, but we cannot guarantee approval, amounts or processing time."
+            ]
+          },
+          {
+            "id": "financing",
+            "title": "Financing",
+            "content": [
+              "Solar loans are provided by independent banks and NBFCs. Interest rates, eligibility, fees and repayment terms are decided by the lender. We may help you with the application but are not responsible for a lender's decision."
+            ]
+          },
+          {
+            "id": "content",
+            "title": "Content and trademarks",
+            "content": [
+              "The text, design, graphics and logo on this website belong to {{brand.legalName}} or are used with permission. Brand names of equipment manufacturers belong to their owners and are shown only to indicate products we install. Please do not copy or reuse our content without written permission."
+            ]
+          },
+          {
+            "id": "third-party",
+            "title": "Third-party links and services",
+            "content": [
+              "The website links to or embeds third-party services such as WhatsApp, Google Maps and YouTube. Their own terms and privacy policies apply, and we are not responsible for their content or availability."
+            ]
+          },
+          {
+            "id": "liability",
+            "title": "Limitation of liability",
+            "content": [
+              "We take care to keep this website accurate and available, but it is provided \"as is\". To the extent permitted by law, we are not liable for any indirect or consequential loss arising from your use of the website or reliance on its estimates. Nothing in these terms limits rights you have under consumer protection law."
+            ]
+          },
+          {
+            "id": "law",
+            "title": "Governing law",
+            "content": [
+              "These terms are governed by the laws of India. Courts at Hyderabad, Telangana will have jurisdiction over any dispute relating to this website."
+            ]
+          },
+          {
+            "id": "terms-changes",
+            "title": "Changes to these terms",
+            "content": [
+              "We may update these terms from time to time. The \"Last updated\" date shows the latest version. Continuing to use the website after changes means you accept them."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "floatingActions": {
+    "whatsapp": true,
+    "call": true
+  }
+}

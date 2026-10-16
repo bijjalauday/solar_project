@@ -1,0 +1,235 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(40px, 6vw, 80px) clamp(48px, 6vw, 72px);
+  background:
+    radial-gradient(circle at 88% 8%, rgb(240 128 27 / 0.2), transparent 32%),
+    radial-gradient(circle at 10% 90%, rgb(127 191 234 / 0.28), transparent 40%),
+    linear-gradient(180deg, var(--sky-tint) 0%, #fff 100%);
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+.hero__eyebrow svg {
+  width: 18px;
+  height: 18px;
+  color: var(--orange);
+  animation: spin 18s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__title {
+  margin: 22px 0 20px;
+  font-size: clamp(2.2rem, 1.3rem + 3.4vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+.hero__highlight {
+  position: relative;
+  display: inline-block;
+  color: var(--orange-text);
+  white-space: nowrap;
+}
+.hero__highlight svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.12em;
+  width: 100%;
+  height: 0.28em;
+  overflow: visible;
+}
+.hero__highlight path {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.hero__subtitle {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 0.96rem + 0.3vw, 1.18rem);
+  line-height: 1.7;
+}
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+.hero__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 26px;
+  color: var(--navy);
+  font-size: 0.93rem;
+  font-weight: 500;
+}
+.hero__highlights li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.hero__highlights svg {
+  width: 18px;
+  height: 18px;
+  color: var(--green);
+}
+
+/* visual */
+.hero__visual {
+  position: relative;
+  padding: 20px 0 40px 28px;
+}
+.hero__image {
+  overflow: hidden;
+  border: 6px solid #fff;
+  border-radius: 28px;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 8 / 6;
+}
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__rating {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.8rem;
+  box-shadow: var(--shadow);
+}
+.hero__rating strong {
+  color: var(--navy);
+}
+.hero__savings {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  gap: 4px;
+  min-width: 230px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+}
+.hero__savings-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero__savings-values {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-head);
+}
+.hero__savings-values svg {
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+}
+.hero__before {
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: line-through;
+  text-decoration-color: var(--danger);
+}
+.hero__after {
+  color: var(--green);
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.hero__savings-note {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* offers */
+.hero__offers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: clamp(40px, 5vw, 64px);
+}
+.hero__offer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.hero__offer strong {
+  display: block;
+  color: var(--navy);
+  font-family: var(--font-head);
+  font-size: 1.08rem;
+}
+.hero__offer span span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 959px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .hero__visual {
+    max-width: 620px;
+  }
+  .hero__offers {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 479px) {
+  .hero__ctas .btn {
+    width: 100%;
+  }
+  .hero__visual {
+    padding-left: 0;
+    padding-bottom: 72px;
+  }
+  .hero__savings {
+    left: 12px;
+    min-width: 0;
+  }
+}

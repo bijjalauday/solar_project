@@ -1,0 +1,128 @@
+.contact {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: clamp(22px, 3vw, 32px);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 100% 0%, rgb(240 128 27 / 0.22), transparent 40%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: rgb(255 255 255 / 0.86);
+}
+.contact__list {
+  display: grid;
+  gap: 18px;
+}
+.contact__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.contact__list small {
+  display: block;
+  color: var(--sky);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.contact__list a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.contact__list a:hover {
+  text-decoration: underline;
+}
+.contact__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgb(255 255 255 / 0.1);
+  color: var(--orange);
+}
+.contact__icon svg {
+  width: 20px;
+  height: 20px;
+}
+.contact__map {
+  flex: 1;
+  width: 100%;
+  min-height: 200px;
+  border: 0;
+  border-radius: 16px;
+}
+
+.contact__form {
+  padding: clamp(22px, 3vw, 36px);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.lead {
+  display: grid;
+  gap: 16px;
+}
+.lead__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.lead__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.lead__privacy {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.lead__done {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 48px 16px;
+  text-align: center;
+}
+.lead__done > svg {
+  width: 56px;
+  height: 56px;
+  color: var(--green);
+}
+.lead__done p {
+  max-width: 420px;
+  color: var(--muted);
+}
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@media (max-width: 959px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .contact__form {
+    order: -1;
+  }
+}
+@media (max-width: 559px) {
+  .lead__row {
+    grid-template-columns: 1fr;
+  }
+}
+.lead__privacy a {
+  color: var(--blue);
+  font-weight: 600;
+}
